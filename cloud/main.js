@@ -1,5 +1,5 @@
 AV.Cloud.define("hello", function(request, response) {
-  var query = new AV.Query("Review");
+  var query = new AV.Query("review");
   query.equalTo("movie", request.params.movie);
   query.find({
     success: function(results) {
