@@ -1,4 +1,4 @@
-AV.Cloud.define("averageStars", function(request, response) {
+AV.Cloud.define("hello", function(request, response) {
   var query = new AV.Query("Review");
   query.equalTo("movie", request.params.movie);
   query.find({
